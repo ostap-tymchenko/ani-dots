@@ -1,3 +1,4 @@
+vim.g.maplocalleader = " "
 require "config.lazy"
 -- require "plugins.plugins"
 -- require "config.lsp"

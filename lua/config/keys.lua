@@ -48,8 +48,10 @@ keymap("v", "<Down>", "<Nop>", opts)
 keymap("v", "<Left>", "<Nop>", opts)
 keymap("v", "<Right>", "<Nop>", opts)
 
--- TrueZen
--- local api = vim.api
---
--- api.nvim_set_keymap("n", "<leader>zn", ":TZNarrow<CR>", {})
--- api.nvim_set_keymap("v", "<leader>zn", ":'<,'>TZNarrow<CR>", {})
+-- word corrections
+vim.api.nvim_set_keymap("n", "<leader>xz", "[s1z=", {}) -- last misspeling
+vim.api.nvim_set_keymap("n", "<leader>xc", "]s1z=", {}) -- next misspeling
+vim.api.nvim_set_keymap("n", "<leader>xx", "1z=", {}) -- this word
+vim.api.nvim_set_keymap('i', '@mail', '<C-r>=\'Ostap.Tymchenko@mail.citytech.cuny.edu\'<CR>', { noremap = true, silent = true })
+
+keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)

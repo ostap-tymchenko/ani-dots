@@ -32,7 +32,7 @@ return {
 	build = "make install_jsregexp"
 },
 
-	{"hrsh7th/nvim-cmp"},
+	{ "hrsh7th/nvim-cmp"},
 	{ "hrsh7th/cmp-nvim-lsp" },
 	{ "hrsh7th/cmp-nvim-lua" },
 	{ "hrsh7th/cmp-buffer" },

@@ -1,9 +1,7 @@
 local opts = { noremap = true, silent = true }
-local term_opts = { silent = true }
 local keymap = vim.keymap.set
 
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
 
 keymap("", "<Space>", "<Nop>", opts)
 keymap("x", "<C-c>", '"+y', opts)
@@ -55,3 +53,9 @@ vim.api.nvim_set_keymap("n", "<leader>xx", "1z=", {}) -- this word
 vim.api.nvim_set_keymap('i', '@mail', '<C-r>=\'Ostap.Tymchenko@mail.citytech.cuny.edu\'<CR>', { noremap = true, silent = true })
 
 keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
+
+vim.keymap.set('i', '<C-Tab>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false
+}, opts)
+

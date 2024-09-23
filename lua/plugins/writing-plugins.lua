@@ -15,10 +15,9 @@ return {
 			 require("true-zen").setup {
 			 }
 		end,
-	}, 
+	},
 
 	{"folke/twilight.nvim", opts = {
-		context = 3,
+		context = 5,
 	}},
-
 }

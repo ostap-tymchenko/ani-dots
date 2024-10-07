@@ -7,6 +7,10 @@ return {
 	{ "rockerBOO/boo-colorscheme-nvim" },
 	{ "projekt0n/github-nvim-theme" },
 	{ "tek256/simple-dark" },
-
-
+	{
+	  "folke/tokyonight.nvim",
+	  lazy = false,
+	  priority = 1000,
+	  opts = {},
+	},
 }

@@ -1,6 +1,5 @@
 return {
-  "iamcco/markdown-preview.nvim",
-  enabled = vim.fn.executable("npm") == 1,
+  "iamcco/markdown-preview.nvim", enabled = vim.fn.executable("npm") == 1,
   cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
   build = "cd app && npm install",
   init = function()

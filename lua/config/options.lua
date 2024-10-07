@@ -30,4 +30,3 @@ vim.opt.mouse = ""
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 vim.opt.spelllang = { 'en_us' }
-vim.g.copilot_no_tab_map = true

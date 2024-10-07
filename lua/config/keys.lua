@@ -54,8 +54,5 @@ vim.api.nvim_set_keymap('i', '@mail', '<C-r>=\'Ostap.Tymchenko@mail.citytech.cun
 
 keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 
-vim.keymap.set('i', '<C-Tab>', 'copilot#Accept("\\<CR>")', {
-  expr = true,
-  replace_keycodes = false
-}, opts)
+vim.api.nvim_set_keymap('n', '<leader>p', ':lua require("nabla").popup()<CR>', { noremap = true, silent = true })
 
